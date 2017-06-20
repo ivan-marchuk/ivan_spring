@@ -16,14 +16,16 @@ public class DatabaseFill implements CommandLineRunner {
     public void run(String... strings) throws Exception {
         Person p = new Person();
         Person p1 = new Person();
+        Person p2 = new Person();
         p.setLastName("Petrov");
         p.setFirstName("Petr");
         repository.save(p);
         p1.setLastName("Ivanov");
         p1.setFirstName("Ivan");
+        repository.save(p1);
         p2.setLastName("Sergeev");
         p2.setFirstName("Sergey");
-        repository.save(p1);
+        repository.save(p2);
     }
 
 
