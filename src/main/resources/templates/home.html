@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Home Page</title>
+    <title>Spring Security Example</title>
 </head>
 <body>
-<div>
-<p>Click <mark><a th:href="@{/hello}">here</a> </mark>.</p>
-<!--<div class="page-header">-->
-    <!--<h1>Здесь будет перечень людей</h1>-->
-<!--</div>-->
-<!--<ul>-->
-    <!--<li th:each="p:${people}"> <p th:text="${p.firstName}">10</p> </li>-->
-<!--</ul>-->
-</div>
+<h1>Welcome!</h1>
+
+<p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
 </body>
 </html>

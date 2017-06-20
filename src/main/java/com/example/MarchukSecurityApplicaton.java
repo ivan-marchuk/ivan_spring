@@ -4,9 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MarchukBi1Application {
+public class MarchukSecurityApplicaton {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MarchukBi1Application.class, args);
+	public static void main(String[] args) throws Throwable {
+		SpringApplication.run(MarchukSecurityApplicaton.class, args);
 	}
+
+
+
 }
